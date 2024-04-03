@@ -58,9 +58,45 @@ public class ClassBaru {
 //        }
 
         System.out.println("Not False : "+!false);
-
         System.out.println(!(false && false) || (true && !(false || true)));//^
         System.out.println("true ^ true => "+(true ^ true));
+
+        // survey dia punya 4 jawaban
+        // masing-masing jawaban punya poin a:4 b:3 c:2 selain ketiga nya adalah ==>
+//         d:1 --- lainnya : .....
+        //if(jawaban.equals("a"))
+//        point+4
+//        else if(jawaban.equals("b"))
+        //        point+3
+        //else if(jawaban.equals("c"))
+        //        point+2
+//        else if(jawaban.equals("d"))
+        //        point+1
+
+
+        String jawaban = "c";
+        int point = 0;
+        if(jawaban.equals("a"))
+        {point+=4;}
+        else if(jawaban.equals("b"))
+        {point+=3;}
+        else if(jawaban.equals("c"))
+        {point+=2;}
+        else if(jawaban.equals("d"))
+        {point+=1;}
+
+        System.out.println("Point Adalah : "+point);
+        point=0;
+        switch (jawaban){
+            case "a":point+=4;break;
+            case "b":point+=3;break;
+            case "c":point+=2;break;
+            case "d":point+=1;break;
+        }
+        System.out.println("Point Adalah : "+point);
+
+
+
 
 //        String strX = "o";
 //        if(strX.equals("a") ||
@@ -72,7 +108,7 @@ public class ClassBaru {
 //        }else {
 //            System.out.println("Ini adalah huruf Konsonan");
 //        }
-        System.out.println(Integer.toBinaryString(15));
-        System.out.println(30 >> 1);//10100
+//        System.out.println(Integer.toBinaryString(15));
+//        System.out.println(30 >> 1);//10100
     }
 }
